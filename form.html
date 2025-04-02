@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration-form</title>
+
+</head>
+
+<body bgcolor="lightblue">
+    <header>
+        <h1>
+            <font face="Comic sans ms" color="mehroon">Hotel</font> Accommodation Registration
+        </h1>
+        <img src="img.png" alt="">
+    </header>
+    <main>
+        <form action="" method="post">
+
+            <div class="form-section">
+                <h1>CONTACT INFORMATION</h1>
+                <hr>
+
+                <div class="form-group">
+                    <label for="firstName">Name</label>
+                    <input type="text" id="firstName" name="firstname" placeholder="first name" required>
+                    <input type="text" id="lastName" name="lastname" placeholder="last name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="streetAddress">Address</label>
+                    <input type="text" id="streetAddress" name="streetAddress" placeholder="Street Address" required>
+                    <br>
+                    <input type="text" id="streetAddress2" name="streetAddress2" placeholder="Street Address Line 2">
+                    <br>
+                    <input type="text" id="city" name="city" placeholder="City">
+                    <input type="text" id="state" name="state" placeholder="State / Province"> <br>
+                    <input type="text" id="pincode" name="pincode" placeholder="Postal / Zip Code">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="areaCode">Phone Number</label>
+                    <input type="text" id="areaCode" name="areaCode" placeholder="Area Code" required>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone number" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h1>ACCOMMODATION INFORMATION</h1>
+                <p>Rooms and rates are subject to availability. Book your reservation as soon as possible to guarantee a
+                    room at this rate</p>
+                <hr>
+
+                <div class="form-group">
+                    <label for="arrival">Arrival Date</label>
+                    <input type="date" id="arrival" name="arrivalDate" required> <br>
+                </div>
+
+                <div class="form-group">
+                    <label for="departure">Departure Date</label>
+                    <input type="date" id="departure" name="departure" required> <br>
+                </div>
+
+                <div class="form-group">
+                    <label for="roomType">Room Type:</label>
+                    <select name="roomType" id="roomType" required>
+                        <option value="single">Single Room / full bed 100$</option>
+                        <option value="double_twin">Double Room / 2 twin beds 125$</option>
+                        <option value="double_queen">Double Room / 2 queen beds 150$</option>
+                        <option value="suite">Suite / 4 queen beds 225$</option>
+                    </select> <br>
+                </div>
+
+                <div class="form-group">
+                    <span> Do you require a smoking room?</span>
+                    <input type="radio" id="smokingYes" name="smoking" value="yes">
+                    <label for="smokingYes">Yes</label>
+                    <input type="radio" id="smokingNo" name="smoking" value="no">
+                    <label for="smokingNo">No</label>
+                </div>
+
+                <div class="form-group">
+                    <span> Do you need transportation from the airport to the hotel? </span>
+                    <input type="radio" id="transportationYes" name="transportation" value="transportationYes">
+                    <label for="transportationYes">Yes</label>
+                    <input type="radio" id="transportationNo" name="transportation" value="transportationNo">
+                    <label for="transportationNo">No</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="flightNumber">Flight Number</label>
+                    <input type="text" id="flightNumber" name="flightNumber" placeholder="Flight Number" required> <br>
+                    <label for="flightTime">Time</label>
+                    <input type="time" id="flightTime" name="flightTime" required> <br>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <h3>Additional Information</h3>
+                    <textarea name="additionalInfo" id="additionalInfo"></textarea>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer style="text-align: right;">  <!--  Using CSS (the better approach) -->
+        <p>This form is a simple test built with HTML to demonstrate form functionality and HTML's capabilities. It's designed to be easily customizable with CSS and JavaScript, but those are intentionally omitted here.</p>
+        <p>&copy Aryan Chandra |  <a href="mailto:aryanprofessional498@gmail.com">Contact Me</a> | Version 1.0</p>
+    </footer>
+</body>
+
+</html>
